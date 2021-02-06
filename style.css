@@ -1,0 +1,176 @@
+/*universal css*/
+body {
+	font-family: "Open Sans", sans-serif;
+	font-size: 16px;
+	color: black;
+}
+
+header, #projects, #skills, #about-me {
+	padding: 2rem 1rem;
+}
+
+h2 {
+	font-family: "Proza Libre", sans-serif;
+	font-size: 1.5em;
+}
+
+h2, .nav-item {
+	text-transform: capitalize;
+}
+
+main h2 {
+	font-weight: 700;
+	margin-bottom: 1.5rem;
+}
+
+.container {
+	margin: 0 auto;
+	/*padding: 2rem 1rem;*/
+	max-width: 1000px;
+}
+
+main .container {
+	margin-top: 2rem;
+}
+
+
+/*header section*/
+
+header .container {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+/*logo text*/
+header h2 {
+	font-size: 1.8rem;
+	font-weight: 700;
+}
+
+/*nav bar*/
+.nav-container {
+	display: flex;
+	width: 300px;
+	justify-content: space-between;
+	align-items: center;
+}
+.nav-container a {
+	font-weight: 600;
+	text-decoration: none;
+	color: black;
+}
+
+/*about me section*/
+.about-me-container {
+	display: flex;
+	width: 100%;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+
+.about-me-content {
+	flex: 0 1 65%;
+	width: 65%;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+}
+.about-me-content p {
+	line-height: 1.2em;
+}
+
+.about-me-content p:not(:last-child) {
+	margin-bottom: 1rem;
+}
+
+.about-me-figure {
+	flex: 0 1 30%;
+	width: 30%;
+	height: auto;
+}
+
+.about-me-figure img {
+	width: 100%;
+	object-fit: cover;
+	object-position: center;
+	border-radius: 1rem;
+}
+
+/*project section*/
+details {
+	cursor: pointer;
+	padding: 5px 0;
+}
+details.project:not(:last-child) {
+	margin-bottom: .2rem;
+}
+
+/*fix the distortion of summary frame with h3 title*/
+.project-title {
+	padding: 5px 0;
+}
+
+.project h3 {
+	display: inline;
+	margin: 1em 0;
+	font-size: 1.17em;
+	font-weight: 600;
+}
+
+.project img {
+	width: 450px;
+	height: auto;
+}
+
+.project figcaption {
+	margin-top: 1rem;
+}
+
+/*skill section*/
+.skill-container {
+	display: flex;
+	width: 100%;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+.skill-container .skill-item {
+	text-align: center;
+}
+.skill-container i {
+	font-size: 2em;
+	width: 2em;
+}
+
+/*footer section*/
+footer {
+	text-align: center;
+}
+footer p {
+	padding: 1.5rem 0;
+}
+.heart {
+	color: red;
+}
+
+@media only screen and (max-width: 600px) {
+	/*universal css*/
+	header, #projects, #skills, #about-me {
+		padding: 1rem .5rem;
+	}
+
+	/*about me section*/
+	.about-me-content {
+		flex: 0 1 100%;
+		width: 100%;
+	}
+	.about-me-figure {
+		flex: 0 1 100%;
+		width: 100%;
+		margin-top: 2rem;
+		text-align: center;
+	}
+	.about-me-figure img {
+		width: 80%;
+	}
+}
